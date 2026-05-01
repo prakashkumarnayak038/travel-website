@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YatraZone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1 class="logo">YatraZone</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="contact-section">
+    <h2>Contact Us</h2>
+
+    <form class="contact-form" name="contactForm" onsubmit="return validateForm()">
+        <input type="text" name="name" placeholder="Your Name">
+        <input type="email" name="email" placeholder="Your Email">
+        <textarea name="message" placeholder="Message"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+    <p id="successMsg" style="display:none; color:green; margin-top:10px;">
+        ✅ Thank you! We will contact you soon.
+    </p>
+</section>
+
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+
+        <div class="footer-box">
+            <h2 class="logo">YatraZone</h2>
+            <p>Explore the world with us. Best travel deals and destinations.</p>
+        </div>
+
+   
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+  
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <p>Email: YatraZone@email.com</p>
+            <p>Phone: +91 9876543210</p>
+            <p>Location: India</p>
+        </div>
+
+      
+        <div class="footer-box">
+            <h3>Follow Us</h3>
+            <p>Instagram</p>
+            <p>Facebook</p>
+            <p>Twitter</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 YatraZone | All Rights Reserved</p>
+    </div>
+
+</footer>
+
+</body>
+<script src="script.js"></script>
+</html>

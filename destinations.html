@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - YatraZone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1 class="logo">YatraZone</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="dest-hero">
+    <h2>Explore Top Destinations ✈️</h2>
+    <p>Choose your dream place</p>
+
+    <div class="search-box">  
+        <input type="text" id="search" placeholder="Search destination..." onkeyup="filterDestinations()">
+    </div>
+</section>
+<section class="featured">
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2">
+            <h3>Goa</h3>
+            <p>Beautiful beaches and nightlife</p>
+            <p class="duration">3 Days / 2 Nights</p>
+            <h4 class="price">₹5,000</h4>
+            <button onclick="bookNow()">Book Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34">
+            <h3>Paris</h3>
+            <p>City of love and lights</p>
+            <p class="duration">5 Days / 4 Nights</p>
+            <h4 class="price">₹45,000</h4>
+            <button onclick="bookNow()">Book Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090">
+            <h3>Dubai</h3>
+            <p>Luxury and modern lifestyle</p>
+            <p class="duration">4 Days / 3 Nights</p>
+            <h4 class="price">₹30,000</h4>
+            <button onclick="bookNow()">Book Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+            <h3>Maldives</h3>
+            <p>Peaceful island vacation</p>
+            <p class="duration">5 Days / 4 Nights</p>
+            <h4 class="price">₹60,000</h4>
+            <button onclick="bookNow()">Book Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://imgcld.yatra.com/ytimages/image/upload/v1484282643/Manali_overview1.jpg">
+            <h3>Manali</h3>
+            <p>Snow mountains and adventure</p>
+            <p class="duration">3 Days / 2 Nights</p>
+            <h4 class="price">₹8,000</h4>
+            <button onclick="bookNow()">Book Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.lnFhTjoxU8KzYvjHbW3IzgHaFU?pid=Api&P=0&h=180">
+            <h3>Singapore</h3>
+            <p>Modern city attractions</p>
+            <p class="duration">5 Days / 4 Nights</p>
+            <h4 class="price">₹50,000</h4>
+            <button onclick="bookNow()">Book Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff">
+            <h3>Switzerland</h3>
+            <p>Snowy mountains and scenic views</p>
+            <p class="duration">6 Days / 5 Nights</p>
+            <h4 class="price">₹80,000</h4>
+            <button onclick="bookNow()">Book Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c">
+            <h3>Bali</h3>
+            <p>Tropical paradise and beaches</p>
+            <p class="duration">5 Days / 4 Nights</p>
+            <h4 class="price">₹35,000</h4>
+            <button onclick="bookNow()">Book Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad">
+            <h3>New York</h3>
+            <p>The city that never sleeps</p>
+            <p class="duration">6 Days / 5 Nights</p>
+            <h4 class="price">₹90,000</h4>
+            <button onclick="bookNow()">Book Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a">
+            <h3>London</h3>
+            <p>Historic landmarks and culture</p>
+            <p class="duration">5 Days / 4 Nights</p>
+            <h4 class="price">₹75,000</h4>
+            <button onclick="bookNow()">Book Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
+            <h3>Thailand</h3>
+            <p>Beaches and nightlife fun</p>
+            <p class="duration">4 Days / 3 Nights</p>
+            <h4 class="price">₹25,000</h4>
+            <button onclick="bookNow()">Book Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1526481280691-906c3f3c4c3b">
+            <h3>Japan</h3>
+            <p>Technology meets tradition</p>
+            <p class="duration">7 Days / 6 Nights</p>
+            <h4 class="price">₹85,000</h4>
+            <button onclick="bookNow()">Book Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e">
+            <h3>Australia</h3>
+            <p>Wildlife and beautiful beaches</p>
+            <p class="duration">7 Days / 6 Nights</p>
+            <h4 class="price">₹95,000</h4>
+            <button onclick="bookNow()">Book Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+            <h3>Canada</h3>
+            <p>Nature and snowy landscapes</p>
+            <p class="duration">6 Days / 5 Nights</p>
+            <h4 class="price">₹88,000</h4>
+            <button onclick="bookNow()">Book Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1533106418989-88406c7cc8ca">
+            <h3>Italy</h3>
+            <p>Food, culture, and history</p>
+            <p class="duration">5 Days / 4 Nights</p>
+            <h4 class="price">₹70,000</h4>
+            <button onclick="bookNow()">Book Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429">
+            <h3>Turkey</h3>
+            <p>Hot air balloons and heritage</p>
+            <p class="duration">5 Days / 4 Nights</p>
+            <h4 class="price">₹55,000</h4>
+            <button onclick="bookNow()">Book Now</button>
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <p>© 2026 YatraZone</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+<footer class="footer">
+
+    <div class="footer-container">
+
+    
+        <div class="footer-box">
+            <h2 class="logo">YatraZone</h2>
+            <p>Explore the world with us. Best travel deals and destinations.</p>
+        </div>
+
+      
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+   
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <p>Email: YatraZone@email.com</p>
+            <p>Phone: +91 9876543210</p>
+            <p>Location: India</p>
+        </div>
+
+   
+        <div class="footer-box">
+            <h3>Follow Us</h3>
+            <p>Instagram</p>
+            <p>Facebook</p>
+            <p>Twitter</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 YatraZone | All Rights Reserved</p>
+    </div>
+
+</footer>
+
+<div id="popup" class="popup">
+    <p>Booking request received! We will call you soon.</p>
+    <button onclick="closePopup()">OK</button>
+</div>
+
+</body>
+<script src="script.js"></script>
+</html>
