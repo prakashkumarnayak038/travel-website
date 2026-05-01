@@ -70,7 +70,7 @@ Sections and cards animate on scroll for better user experience.
 
 ## 🌐 Live Demo
 
-(Add your deployed link here)
+ https://prakashkumarnayak038.github.io/travel-website/
 
 ---
 
